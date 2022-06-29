@@ -15,16 +15,22 @@ puts "course seeds complete🌱"
 
 puts "creating assignment seeds🌱"
 
-Assignment.create(title: Faker::Movies::HitchhikersGuideToTheGalaxy.planet , description: Faker::Movies::HitchhikersGuideToTheGalaxy.quote )
-Assignment.create(title: Faker::Movies::HitchhikersGuideToTheGalaxy.planet , description: Faker::Movies::HitchhikersGuideToTheGalaxy.quote )
-Assignment.create(title: Faker::Movies::HitchhikersGuideToTheGalaxy.planet , description: Faker::Movies::HitchhikersGuideToTheGalaxy.quote )
-Assignment.create(title: Faker::Movies::HitchhikersGuideToTheGalaxy.planet , description: Faker::Movies::HitchhikersGuideToTheGalaxy.quote )
-Assignment.create(title: Faker::Movies::HitchhikersGuideToTheGalaxy.planet , description: Faker::Movies::HitchhikersGuideToTheGalaxy.quote )
-Assignment.create(title: Faker::Movies::HitchhikersGuideToTheGalaxy.planet , description: Faker::Movies::HitchhikersGuideToTheGalaxy.quote )
-Assignment.create(title: Faker::Movies::HitchhikersGuideToTheGalaxy.planet , description: Faker::Movies::HitchhikersGuideToTheGalaxy.quote )
-Assignment.create(title: Faker::Movies::HitchhikersGuideToTheGalaxy.planet , description: Faker::Movies::HitchhikersGuideToTheGalaxy.quote )
-Assignment.create(title: Faker::Movies::HitchhikersGuideToTheGalaxy.planet , description: Faker::Movies::HitchhikersGuideToTheGalaxy.quote )
-Assignment.create(title: Faker::Movies::HitchhikersGuideToTheGalaxy.planet , description: Faker::Movies::HitchhikersGuideToTheGalaxy.quote )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+Assignment.create(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+
 puts "course seeds complete🌱"
 puts "creating course_assignment seeds🌱"
 CourseAssignment.create!(course_id: rand(1..(Course.all.length)), assignment_id: rand(1..(Assignment.all.length)), assignedOn: Date.new(2022,7,1), dueOn: Date.new(2022,8,1))
