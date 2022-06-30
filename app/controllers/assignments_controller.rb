@@ -7,4 +7,12 @@ class AssignmentsController < ApplicationController
         render json: Assignment.find(params[:id])
     end
 
+    def create 
+        render json: Assignment.create!(assignment_params), status: :ok
+    end
+
+private
+def assignments_params 
+    params.permit(:title, :description)
+end
 end
