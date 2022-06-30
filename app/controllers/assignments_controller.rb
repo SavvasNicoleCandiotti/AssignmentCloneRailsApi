@@ -1,3 +1,4 @@
+
 class AssignmentsController < ApplicationController
 
     def index
@@ -8,11 +9,15 @@ class AssignmentsController < ApplicationController
     end
 
     def create 
-        render json: Assignment.create!(assignment_params), status: :ok
+        # binding.break
+        assignment = Assignment.create!(assignments_params)
+        render json: assignment, status: :created
     end
 
 private
+
 def assignments_params 
-    params.permit(:title, :description)
+    binding.break
+    params.permit([:title, :description])
 end
 end
