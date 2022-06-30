@@ -5,4 +5,13 @@ class CourseAssignment < ApplicationRecord
   validates_date :assignedOn, on: :create, on_or_after: lambda { Date.current }
   validates_date :dueOn, on_or_after: :assignedOn
   
+
+  def title 
+    self.assignment.title
+  end
+
+  def description
+    self.assignment.description
+  end
+
 end

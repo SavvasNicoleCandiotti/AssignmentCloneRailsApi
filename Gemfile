@@ -30,6 +30,8 @@ gem "jbuilder"
 
 gem 'validates_timeliness'
 
+gem 'active_model_serializers'
+
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
