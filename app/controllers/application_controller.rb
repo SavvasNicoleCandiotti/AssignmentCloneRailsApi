@@ -5,11 +5,10 @@ rescue_from ActiveRecord::RecordNotFound, with: :render_not_found
 private
 def render_unprocessable_entity(exception)
         render json: {error: exception.record.errors.full_messages}, 
-        status: :render_unprocessable_entity
+        status: :unprocessable_entity
 end
 def render_not_found(error)
         render json: {error: "#{error.message}"}, status: :not_found 
-
 end
 
 end

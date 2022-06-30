@@ -1,5 +1,5 @@
 class CourseAssignmentsController < ApplicationController
-    
+
     def index
         render json: CourseAssignment.all, status: :ok
     end
@@ -15,7 +15,7 @@ class CourseAssignmentsController < ApplicationController
     private
     
     def course_assignment_params
-        params.permit(:assignment_id, :course_id, :assignedOn, :dueOn)
+        params.require(:course_assignment).permit(:course_id, :assignedOn, :dueOn, :assignment_id)
     end
 
 end

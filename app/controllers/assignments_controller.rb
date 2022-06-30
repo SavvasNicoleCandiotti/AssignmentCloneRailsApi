@@ -17,7 +17,7 @@ class AssignmentsController < ApplicationController
 private
 
     def assignments_params 
-        params.permit(:title, :description)
+        params.require(:assignment).permit(:title, :description)
     end
     
 end
