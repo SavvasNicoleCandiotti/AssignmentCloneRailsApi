@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-    
+
 rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity
 rescue_from ActiveRecord::RecordNotFound, with: :render_not_found
 private
@@ -9,7 +9,7 @@ def render_unprocessable_entity(exception)
 end
 def render_not_found(error)
         render json: {error: "#{error.message}"}, status: :not_found 
-        status: :render_unprocessable_entity
+
 end
 
 end
