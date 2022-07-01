@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_29_203125) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_01_154153) do
   create_table "assignments", force: :cascade do |t|
     t.string "title"
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "program_id", null: false
+    t.index ["program_id"], name: "index_assignments_on_program_id"
   end
 
   create_table "course_assignments", force: :cascade do |t|
@@ -29,6 +31,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_29_203125) do
     t.index ["course_id"], name: "index_course_assignments_on_course_id"
   end
 
+  create_table "course_programs", force: :cascade do |t|
+    t.integer "course_id", null: false
+    t.integer "program_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_course_programs_on_course_id"
+    t.index ["program_id"], name: "index_course_programs_on_program_id"
+  end
+
   create_table "courses", force: :cascade do |t|
     t.string "name"
     t.integer "gradeLevel"
@@ -36,6 +47,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_29_203125) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "programs", force: :cascade do |t|
+    t.string "name"
+    t.integer "gradeLevel"
+    t.boolean "is_common_core"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "assignments", "programs"
   add_foreign_key "course_assignments", "assignments"
   add_foreign_key "course_assignments", "courses"
+  add_foreign_key "course_programs", "courses"
+  add_foreign_key "course_programs", "programs"
 end
