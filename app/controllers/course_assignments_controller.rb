@@ -13,7 +13,8 @@ class CourseAssignmentsController < ApplicationController
     end
 
     def update
-        render json: course_assignment.update!(course_assignment_params)
+        course_assignment.update!(course_assignment_params)
+        render json: course_assignment
     end
 
     def destroy
@@ -28,7 +29,7 @@ class CourseAssignmentsController < ApplicationController
     end
 
     def course_assignment
-        @course = CourseAssignment.find(params[:id])
+        @course_assignment = CourseAssignment.find(params[:id])
     end
 
 end
