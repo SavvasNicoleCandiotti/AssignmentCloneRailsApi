@@ -1,6 +1,6 @@
 class ProgramsController < ApplicationController
 
-     def index
+    def index
         render json: programs, status: :ok
     end
     
