@@ -11,14 +11,18 @@ class AssignmentsController < ApplicationController
     end
 
     def create 
-        assignment = Assignment.create!(assignments_params)
+        assignment = program.assignments.create!(assignments_params)
         render json: assignment, status: :created
     end
 
 private
 
     def assignments_params 
-        params.require(:assignment).permit(:title, :description)
+        params.require(:assignment).permit(:title, :description, :program_id)
+    end
+
+    def program 
+        Program.find(params[:program_id])
     end
     
 end
