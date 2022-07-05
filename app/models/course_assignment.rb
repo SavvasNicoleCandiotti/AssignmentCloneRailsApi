@@ -14,4 +14,8 @@ class CourseAssignment < ApplicationRecord
     self.assignment.description
   end
 
+  def program_id
+    self.assignment.program_id
+  end
+
 end
