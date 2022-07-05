@@ -1,3 +1,3 @@
 class ProgramSerializer < ActiveModel::Serializer
-  attributes :id, :name, :gradeLevel, :is_common_core
+  attributes :id, :name, :gradeLevel, :is_common_core, :assignments
 end
