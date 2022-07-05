@@ -6,24 +6,25 @@ CourseAssignment.destroy_all
 
 
 puts "creating course seeds🌱"
-@ccss_math_2 = Course.create!(name:"Common Core Mathematics", gradeLevel: 2)
-@ccss_ela_4 = Course.create!(name:"Common Core Literacy", gradeLevel: 4)
-@tx_math_2 = Course.create!(name:"Texas Mathematics Class", gradeLevel: 2)
-@tx_ela_4 = Course.create!(name:"Texas Literacy Class", gradeLevel: 4)
-@aullons_au_dela = Course.create!(name:"Allons au Dela", gradeLevel: 10)
-@associate_developers = Course.create!(name:"Associate Devolpers 101", gradeLevel: 1)
+@ms_ccss = Course.create!(name:"Ms. CCSS", gradeLevel: 2)
+
+@mr_tx = Course.create!(name:"Mr. Texas", gradeLevel: 2)
+
+@aullons_au_dela = Course.create!(name:"Ms. Allons au Dela", gradeLevel: 10)
+
+@associate_developers = Course.create!(name:"Ms. Lovelace 2nd Period", gradeLevel: 1)
 
 puts "course seeds complete🌱"
 
 puts "creating program seeds🌱"
-@ccss_envision_math = Program.create!(name:"Envision Math 2018 2nd Grade", gradeLevel: 2, is_common_core: true)
-@tx_envision_math = Program.create!(name:"Texas Envision Math 2018 2nd Grade", gradeLevel: 2, is_common_core: false)
+@ccss_envision_math = Program.create!(name:"Envision Math 2018 2nd Grade", gradeLevel: 2, is_common_core: true, subject: "MATH")
+@tx_envision_math = Program.create!(name:"Texas Envision Math 2018 2nd Grade", gradeLevel: 2, is_common_core: false, subject: "MATH")
 
-@ccss_realize = Program.create!(name:"Realize 2018 4th Grade", gradeLevel: 4, is_common_core: true)
-@tx_realize = Program.create!(name:"Texas Realize 2018 4th Grade", gradeLevel: 4, is_common_core: false)
+@ccss_realize = Program.create!(name:"Realize 2018 4th Grade", gradeLevel: 4, is_common_core: true, subject: "ELA")
+@tx_realize = Program.create!(name:"Texas Realize 2018 4th Grade", gradeLevel: 4, is_common_core: false, subject: "ELA")
 
-@aad_program = Program.create!(name:"Allons au Dela Program 10th Grade", gradeLevel: 10, is_common_core: false)
-@associate_developers_program = Program.create!(name:"Associate Developers Program 10th Grade", gradeLevel: 10, is_common_core: false)
+@aad_program = Program.create!(name:"Allons au Dela Program 10th Grade", gradeLevel: 10, is_common_core: false, subject: "JIBBERISH")
+@associate_developers_program = Program.create!(name:"Associate Developers Program 10th Grade", gradeLevel: 10, is_common_core: false, subject: "COMPUTER SCIENCE")
 
 
 puts "program seeds complete🌱"
@@ -32,11 +33,11 @@ puts "creating course program seeds🌱"
 
 # associate courses with programs
 
-@cp_ccss_math = @ccss_math_2.course_programs.create!(program_id: @ccss_envision_math.id)
-@cp_ccss_ela = @ccss_ela_4.course_programs.create!(program_id: @ccss_realize.id)
+@cp_ccss_math = @ms_ccss.course_programs.create!(program_id: @ccss_envision_math.id)
+@cp_ccss_ela = @ms_ccss.course_programs.create!(program_id: @ccss_realize.id)
 
-@cp_tx_math = @tx_math_2.course_programs.create!(program_id: @tx_envision_math.id)
-@cp_tx_ela = @tx_ela_4.course_programs.create!(program_id: @tx_realize.id)
+@cp_tx_math = @mr_tx.course_programs.create!(program_id: @tx_envision_math.id)
+@cp_tx_ela = @mr_tx.course_programs.create!(program_id: @tx_realize.id)
 
 @cp_aullons_au_dela = @aullons_au_dela.course_programs.create!(program_id: @aad_program.id)
 
