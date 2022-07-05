@@ -1,6 +1,6 @@
 class CourseSerializer < ActiveModel::Serializer
-  attributes :id, :name, :gradeLevel, :show_programs
+  attributes :id, :name, :gradeLevel
   
-  # has_many :course_programs
-  # has_many :programs, through: :course_programs
+  has_many :programs
+  has_many :course_assignments
 end
