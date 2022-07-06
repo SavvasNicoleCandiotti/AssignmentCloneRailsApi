@@ -49,45 +49,45 @@ puts "creating assignment seeds🌱"
 
 # ccss realize assignments
 
-@ccss_realize_assignment_1 = @ccss_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@ccss_realize_assignment_2 = @ccss_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@ccss_realize_assignment_3 = @ccss_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@ccss_realize_assignment_4 = @ccss_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@ccss_realize_assignment_5 = @ccss_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@ccss_realize_assignment_6 = @ccss_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+@ccss_realize_assignment_1 = @ccss_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@ccss_realize_assignment_2 = @ccss_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@ccss_realize_assignment_3 = @ccss_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@ccss_realize_assignment_4 = @ccss_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@ccss_realize_assignment_5 = @ccss_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@ccss_realize_assignment_6 = @ccss_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
 
 # tx realize assignments
-@tx_realize_assignment_1 = @tx_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@tx_realize_assignment_2 = @tx_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@tx_realize_assignment_3 = @tx_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@tx_realize_assignment_4 = @tx_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@tx_realize_assignment_5 = @tx_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@tx_realize_assignment_6 = @tx_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+@tx_realize_assignment_1 = @tx_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@tx_realize_assignment_2 = @tx_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@tx_realize_assignment_3 = @tx_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@tx_realize_assignment_4 = @tx_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@tx_realize_assignment_5 = @tx_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@tx_realize_assignment_6 = @tx_realize.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
 
 # ccss math assignments
-@ccss_envision_math_assignment_1 = @ccss_envision_math.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@ccss_envision_math_assignment_2 = @ccss_envision_math.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@ccss_envision_math_assignment_3 = @ccss_envision_math.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@ccss_envision_math_assignment_4 = @ccss_envision_math.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@ccss_envision_math_assignment_5 = @ccss_envision_math.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@ccss_envision_math_assignment_6 = @ccss_envision_math.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+@ccss_envision_math_assignment_1 = @ccss_envision_math.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@ccss_envision_math_assignment_2 = @ccss_envision_math.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@ccss_envision_math_assignment_3 = @ccss_envision_math.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@ccss_envision_math_assignment_4 = @ccss_envision_math.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@ccss_envision_math_assignment_5 = @ccss_envision_math.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@ccss_envision_math_assignment_6 = @ccss_envision_math.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
 
 
 # Allons au Dela assignments
-@aullons_au_dela_assignment_1 = @aad_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@aullons_au_dela_assignment_2 = @aad_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@aullons_au_dela_assignment_3 = @aad_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@aullons_au_dela_assignment_4 = @aad_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@aullons_au_dela_assignment_5 = @aad_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@aullons_au_dela_assignment_6 = @aad_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+@aullons_au_dela_assignment_1 = @aad_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@aullons_au_dela_assignment_2 = @aad_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@aullons_au_dela_assignment_3 = @aad_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@aullons_au_dela_assignment_4 = @aad_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@aullons_au_dela_assignment_5 = @aad_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@aullons_au_dela_assignment_6 = @aad_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
 
 # associate developers assignments
-@associate_developers_assignment_1 = @associate_developers_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@associate_developers_assignment_2 = @associate_developers_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@associate_developers_assignment_3 = @associate_developers_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@associate_developers_assignment_4 = @associate_developers_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@associate_developers_assignment_5 = @associate_developers_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
-@associate_developers_assignment_6 = @associate_developers_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraphs )
+@associate_developers_assignment_1 = @associate_developers_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@associate_developers_assignment_2 = @associate_developers_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@associate_developers_assignment_3 = @associate_developers_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@associate_developers_assignment_4 = @associate_developers_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@associate_developers_assignment_5 = @associate_developers_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
+@associate_developers_assignment_6 = @associate_developers_program.assignments.create!(title: Faker::Vehicle.make , description: Faker::Lorem.paragraph )
 
 
 
