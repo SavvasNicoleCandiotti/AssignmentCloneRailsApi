@@ -4,9 +4,9 @@ class CourseAssignment < ApplicationRecord
   # validates :course_id, :assignment_id, presence: true
   validates_date :assignedOn, on: :create, on_or_after: lambda { Date.current }
   validates_date :dueOn, on_or_after: :assignedOn
-  
 
-  def title 
+
+  def title
     self.assignment.title
   end
 
@@ -16,6 +16,10 @@ class CourseAssignment < ApplicationRecord
 
   def program_id
     self.assignment.program_id
+  end
+
+  def course_name
+    self.course.name
   end
 
 end
